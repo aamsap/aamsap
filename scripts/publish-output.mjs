@@ -1,12 +1,13 @@
 import { readFile } from 'node:fs/promises';
 
-// Publish only the six named generated files. Preserve output history and other files.
+// Publish only the named generated files. Preserve output history and other files.
 // The source branch is never updated by this script.
 const repository = process.env.GITHUB_REPOSITORY;
 const token = process.env.GITHUB_TOKEN;
 if (!token || !/^[\w.-]+\/[\w.-]+$/.test(repository ?? '')) throw new Error('GITHUB_TOKEN and GITHUB_REPOSITORY are required');
 const branch = 'output';
-const files = ['header-light.svg', 'header-dark.svg', 'header-mobile-light.svg', 'header-mobile-dark.svg', 'contribution-snake-light.svg', 'contribution-snake-dark.svg'];
+const animatedFiles = ['header-light.svg', 'header-dark.svg', 'header-mobile-light.svg', 'header-mobile-dark.svg', 'contribution-snake-light.svg', 'contribution-snake-dark.svg'];
+const files = animatedFiles.flatMap(name => [name, name.replace('.svg', '-static.svg')]);
 
 async function api(route, { method = 'GET', body, allowMissing = false } = {}) {
   const response = await fetch(`https://api.github.com/repos/${repository}/git/${route}`, {

@@ -9,5 +9,6 @@ for (const theme of ['light', 'dark']) {
   const motion = '<style>@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>';
   const annotated = svg.replace(/(<svg\b[^>]*>)/, `$1${accessibility}`).replace('</svg>', `${motion}</svg>`);
   await writeFile(file, annotated);
+  await writeFile(new URL(`../dist/contribution-snake-${theme}-static.svg`, import.meta.url), annotated.replace('</svg>', '<style>*{animation:none!important}</style></svg>'));
   console.log(`Prepared contribution-snake-${theme}.svg (${Buffer.byteLength(annotated)} bytes)`);
 }

@@ -94,7 +94,9 @@ function header(dark, mobile) {
 for (const dark of [false, true]) {
   for (const mobile of [false, true]) {
     const name = `header${mobile ? '-mobile' : ''}-${dark ? 'dark' : 'light'}.svg`;
-    await writeFile(new URL(name, assets), header(dark, mobile).replace(/[\t ]+$/gm, ''));
+    const svg = header(dark, mobile).replace(/[\t ]+$/gm, '');
+    await writeFile(new URL(name, assets), svg);
+    await writeFile(new URL(name.replace('.svg', '-static.svg'), assets), svg.replace('</svg>', '<style>*{animation:none!important}</style></svg>'));
     console.log(`Built ${assets.pathname}${name}`);
   }
 }
