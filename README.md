@@ -108,7 +108,6 @@ Even my contribution graph has a cleanup crew. 🐍
   <img src="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-light.svg" width="100%" alt="A red snake eating cells from my actual GitHub contribution calendar. Automatically regenerated daily, with a still version for reduced motion.">
 </picture>
 
-[![Profile animation workflow](https://img.shields.io/github/actions/workflow/status/aamsap/aamsap/profile-visuals.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=Daily%20redraw)](https://github.com/aamsap/aamsap/actions/workflows/profile-visuals.yml)
 <sub>Real contribution history · A fresh drawing every day · Powered by <a href="https://github.com/Platane/snk">Platane/snk</a></sub>
 
 ---
