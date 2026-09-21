@@ -1,0 +1,57 @@
+name: Refresh profile visuals
+
+on:
+  schedule:
+    # 23:23 UTC = 06:23 WIB the following morning. GitHub may delay scheduled runs.
+    - cron: '23 23 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/profile-visuals.yml'
+      - 'scripts/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals-output
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+
+      - name: Draw animated banners
+        run: node scripts/build-assets.mjs
+        env:
+          PROFILE_ASSET_DIR: dist
+
+      - name: Turn contributions into a snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/contribution-snake-light.svg?color_snake=#b63327&color_dots=#e4e6e0,#b5c9cc,#819fa8,#527b89,#275362
+            dist/contribution-snake-dark.svg?palette=github-dark&color_snake=#ff8171&color_dots=#1b272c,#314750,#486773,#719ca8,#a4cad1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add accessible motion handling
+        run: node scripts/finalize-snake.mjs
+
+      - name: Publish SVGs to output branch
+        run: node scripts/publish-output.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

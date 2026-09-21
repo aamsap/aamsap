@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 
 // Original vector artwork. No fonts, image services, or packages to install.
-const assets = new URL('../assets/', import.meta.url);
+const assets = new URL(process.env.PROFILE_ASSET_DIR ? `../${process.env.PROFILE_ASSET_DIR}/` : '../assets/', import.meta.url);
 await mkdir(assets, { recursive: true });
 
 function header(dark, mobile) {
@@ -12,13 +12,14 @@ function header(dark, mobile) {
   const h = mobile ? 490 : 410;
   const diagram = mobile ? '' : `
   <g transform="translate(882 193)" fill="none" stroke="${c.blue}" stroke-width="1.4">
-    <circle r="110" stroke-dasharray="4 7"/>
+    <circle class="orbit" r="110" stroke-dasharray="4 7"/>
     <circle r="76"/>
     <path d="M-143 0H143M0-133V133" stroke-dasharray="3 6"/>
     <path d="M-71-41L0-82L71-41V41L0 82L-71 41Z" stroke="${c.ink}" stroke-width="2"/>
     <path d="M-71-41L0 0L71-41M0 0V82" stroke="${c.ink}" stroke-width="2"/>
+    <path class="signal" d="M0-82L71-41V41L0 82L-71 41V-41Z" pathLength="100" stroke="${c.red}" stroke-width="3" stroke-dasharray="8 92"/>
     <path d="M0-82V-125H95M71 41H136M-71 41H-136"/>
-    <circle cy="-82" r="5" fill="${c.red}" stroke="${c.red}"/>
+    <circle class="pulse" cy="-82" r="5" fill="${c.red}" stroke="${c.red}"/>
     <circle cx="71" cy="41" r="5" fill="${c.bg}" stroke="${c.ink}"/>
     <circle cx="-71" cy="41" r="5" fill="${c.bg}" stroke="${c.ink}"/>
     <path d="M-13-5L-3 5L16-16" stroke="${c.red}" stroke-width="3"/>
@@ -32,7 +33,18 @@ function header(dark, mobile) {
   </g>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="title desc">
   <title id="title">Ilham Saputra — Aam</title>
-  <desc id="desc">AI automation, data analytics, and web development. Original engineering drawing with a connected three-axis diagram.</desc>
+  <desc id="desc">AI automation, data analytics, and web development. A moving signal connects the three practices. Animation pauses for reduced motion.</desc>
+  <style>
+    .orbit { animation: orbit 32s linear infinite; transform-origin: 0 0; }
+    .signal { animation: signal 9s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .delay-1 { animation-delay: 1s; }
+    .delay-2 { animation-delay: 2s; }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes signal { to { stroke-dashoffset: -100; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+    @media (prefers-reduced-motion: reduce) { .orbit, .signal, .pulse { animation: none; } }
+  </style>
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="${c.grid}" stroke-width="0.7"/>
@@ -63,6 +75,11 @@ function header(dark, mobile) {
     <text x="40" y="380">02  DATA ANALYTICS</text>
     <text x="40" y="413">03  WEB DEVELOPMENT</text>
   </g>
+  <g fill="${c.red}">
+    <circle class="pulse" cx="538" cy="341" r="5"/>
+    <circle class="pulse delay-1" cx="538" cy="374" r="5"/>
+    <circle class="pulse delay-2" cx="538" cy="407" r="5"/>
+  </g>
   <path d="M16 436H584" stroke="${c.blue}"/>
   <text x="40" y="463" font-family="Consolas, monospace" font-size="16" fill="${c.muted}">MALANG, INDONESIA / WORKING REMOTELY</text>` : `
   <path d="M16 366H1184M742 366V394" stroke="${c.blue}"/>
@@ -77,7 +94,7 @@ function header(dark, mobile) {
 for (const dark of [false, true]) {
   for (const mobile of [false, true]) {
     const name = `header${mobile ? '-mobile' : ''}-${dark ? 'dark' : 'light'}.svg`;
-  await writeFile(new URL(name, assets), header(dark, mobile).replace(/[\t ]+$/gm, ''));
-    console.log(`Built assets/${name}`);
+    await writeFile(new URL(name, assets), header(dark, mobile).replace(/[\t ]+$/gm, ''));
+    console.log(`Built ${assets.pathname}${name}`);
   }
 }

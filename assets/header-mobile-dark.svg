@@ -1,6 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="490" viewBox="0 0 600 490" role="img" aria-labelledby="title desc">
   <title id="title">Ilham Saputra — Aam</title>
-  <desc id="desc">AI automation, data analytics, and web development. Original engineering drawing with a connected three-axis diagram.</desc>
+  <desc id="desc">AI automation, data analytics, and web development. A moving signal connects the three practices. Animation pauses for reduced motion.</desc>
+  <style>
+    .orbit { animation: orbit 32s linear infinite; transform-origin: 0 0; }
+    .signal { animation: signal 9s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .delay-1 { animation-delay: 1s; }
+    .delay-2 { animation-delay: 2s; }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes signal { to { stroke-dashoffset: -100; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+    @media (prefers-reduced-motion: reduce) { .orbit, .signal, .pulse { animation: none; } }
+  </style>
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="#283739" stroke-width="0.7"/>
@@ -30,6 +41,11 @@
     <text x="40" y="347">01  AI AUTOMATION</text>
     <text x="40" y="380">02  DATA ANALYTICS</text>
     <text x="40" y="413">03  WEB DEVELOPMENT</text>
+  </g>
+  <g fill="#ff8171">
+    <circle class="pulse" cx="538" cy="341" r="5"/>
+    <circle class="pulse delay-1" cx="538" cy="374" r="5"/>
+    <circle class="pulse delay-2" cx="538" cy="407" r="5"/>
   </g>
   <path d="M16 436H584" stroke="#607f89"/>
   <text x="40" y="463" font-family="Consolas, monospace" font-size="16" fill="#a4aea9">MALANG, INDONESIA / WORKING REMOTELY</text>
