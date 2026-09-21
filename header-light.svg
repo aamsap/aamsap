@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
+  <title id="title">Ilham Saputra — Aam</title>
+  <desc id="desc">AI automation, data analytics, and web development. A moving signal connects the three practices. Animation pauses for reduced motion.</desc>
+  <style>
+    .orbit { animation: orbit 32s linear infinite; transform-origin: 0 0; }
+    .signal { animation: signal 9s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .delay-1 { animation-delay: 1s; }
+    .delay-2 { animation-delay: 2s; }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes signal { to { stroke-dashoffset: -100; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+    @media (prefers-reduced-motion: reduce) { .orbit, .signal, .pulse { animation: none; } }
+  </style>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#cbd3cf" stroke-width="0.7"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="410" fill="#e4e6e0"/>
+  <rect x="16" y="16" width="1168" height="378" fill="url(#grid)" stroke="#748f99" stroke-width="1"/>
+  <g stroke="#182023" stroke-width="1.4">
+    <path d="M8 30H30V8M1192 30H1170V8M8 380H30V402M1192 380H1170V402" fill="none"/>
+  </g>
+  <g font-family="Consolas, monospace" font-size="15" fill="#505e60" letter-spacing="1.5">
+    <text x="48" y="55">AAMSAP / ENGINEERING THE EVERYDAY</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="900" letter-spacing="-5" fill="#182023">
+    <text x="42" y="167">ILHAM</text>
+    <text x="42" y="273">SAPUTRA<tspan fill="#b63327">.</tspan></text>
+  </g>
+  <g stroke="#748f99" fill="none">
+    <path d="M49 307H597"/>
+    <path d="M49 298V316M597 298V316"/>
+  </g>
+  <rect x="205" y="296" width="224" height="23" fill="#e4e6e0"/>
+  <text x="317" y="313" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#b63327">YOU CAN CALL ME AAM</text>
+
+  <g transform="translate(882 193)" fill="none" stroke="#748f99" stroke-width="1.4">
+    <circle class="orbit" r="110" stroke-dasharray="4 7"/>
+    <circle r="76"/>
+    <path d="M-143 0H143M0-133V133" stroke-dasharray="3 6"/>
+    <path d="M-71-41L0-82L71-41V41L0 82L-71 41Z" stroke="#182023" stroke-width="2"/>
+    <path d="M-71-41L0 0L71-41M0 0V82" stroke="#182023" stroke-width="2"/>
+    <path class="signal" d="M0-82L71-41V41L0 82L-71 41V-41Z" pathLength="100" stroke="#b63327" stroke-width="3" stroke-dasharray="8 92"/>
+    <path d="M0-82V-125H95M71 41H136M-71 41H-136"/>
+    <circle class="pulse" cy="-82" r="5" fill="#b63327" stroke="#b63327"/>
+    <circle cx="71" cy="41" r="5" fill="#e4e6e0" stroke="#182023"/>
+    <circle cx="-71" cy="41" r="5" fill="#e4e6e0" stroke="#182023"/>
+    <path d="M-13-5L-3 5L16-16" stroke="#b63327" stroke-width="3"/>
+  </g>
+  <g font-family="Consolas, monospace" font-size="14" fill="#505e60">
+    <text x="986" y="73">01 / DATA</text>
+    <text x="1029" y="239">02 / WEB</text>
+    <text x="653" y="239">03 / AUTO</text>
+    <text x="797" y="327">THREE PRACTICES.</text>
+    <text x="797" y="347">ONE CONNECTED SYSTEM.</text>
+  </g>
+
+  <path d="M16 366H1184M742 366V394" stroke="#748f99"/>
+  <g font-family="Consolas, monospace" font-size="14" fill="#182023" letter-spacing="0.4">
+    <text x="48" y="385">AI AUTOMATION / DATA ANALYTICS / WEB DEVELOPMENT</text>
+    <text x="770" y="385">MALANG, INDONESIA / WORKING REMOTELY</text>
+  </g>
+</svg>
