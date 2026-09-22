@@ -15,8 +15,8 @@ I'm **Ilham Saputra**, usually called **Aam** — a data specialist and develope
 
 **Open to roles in AI automation, data analytics, and web development · Remote**
 
-[![Portfolio and case studies](https://img.shields.io/badge/Portfolio-Case_Studies-B63327?style=for-the-badge)](https://aam.excellentchimp.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-182023?style=for-the-badge)](https://www.linkedin.com/in/ilham-saputra-aam)
+[![Portfolio and case studies](https://img.shields.io/badge/Portfolio-Case_Studies-B63327?style=for-the-badge)](https://aam.excellentchimp.com/) _
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-182023?style=for-the-badge)](https://www.linkedin.com/in/ilham-saputra-aam) _
 [![Email me](https://img.shields.io/badge/Email-Let%27s_Talk-182023?style=for-the-badge&logo=gmail&logoColor=FF8171)](mailto:ilhamsaputraferdinand@gmail.com)
 
 <details>
@@ -162,6 +162,7 @@ Tools across my public and private projects, grouped by the work they do.
 
 ---
 
-**Have a process that still runs by hand?** I'd like to help build what comes next.
+## Have a process that still runs by hand?
 
+I'd like to help build what comes next.
 [Let's talk about your team →](mailto:ilhamsaputraferdinand@gmail.com) · [Get to know my work →](https://aam.excellentchimp.com/)
