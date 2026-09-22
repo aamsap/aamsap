@@ -4,7 +4,7 @@
 
 An engineering drawing for a person who connects automation, analytics, and interfaces. Original animated banners echo the drafting-film palette, red annotations, and numbered sheets on Aam's existing portfolio. A color-matched contribution snake adds an arcade moment, and Shields.io badge rows make the toolkit scannable.
 
-The reading order is designed for hiring: positioning and contact first, client outcomes second, Kanbaam as the sole featured project, then tools and optional career context. Section headings are unnumbered. The Kanbaam visual is an original animated illustration of a task moving across a board, not a screenshot or an interactive application. Its rose palette, three-bar mark, and tagline follow Kanbaam's own identity. Desktop and phone compositions have still counterparts.
+The reading order is designed for hiring: positioning and contact, an optional career-background disclosure, Kanbaam as the sole featured project, the working toolkit, and a separate AI tools section. The outcome section was removed at the owner's request. Section headings are unnumbered. The Kanbaam visual is an original animated illustration of a task moving across a board, not a screenshot or an interactive application. Its paper/ink palette, vermilion accent, fine grid, registration marks, square board geometry, and monospaced labels match the profile header. Desktop and phone compositions have still counterparts.
 
 ## Research and factual sources
 
@@ -14,6 +14,7 @@ Reviewed on 22 September 2026:
 - [Public repositories](https://api.github.com/users/aamsap/repos?per_page=100): project ownership, descriptions, languages, and repository links. Forks were not presented as original projects.
 - Public manifest/source audit: Kanbaam supports Playwright, axe accessibility checks, and Lucide; Aamverse supports Three.js and React Three Fiber; foodnow supports Vue, Vite, and Sass; Manre supports FastAPI, MongoDB, Framer Motion, and React Query; Chimp Chart supports Express, Recharts, and Zod; the Tableau tool imports Streamlit and pandas.
 - With the owner's explicit permission, private dependency manifests were also inspected. They support the additional Next.js, React Native, Expo, Supabase, PostgreSQL, Redis, Prisma, Drizzle, Fastify, Gemini/OpenAI SDKs, Vitest, Jest, Stripe, Resend, and Sentry badges. Only technology names are published. The repository-to-dependency mapping stays in the ignored local `.preview/` folder. Manifest presence is evidence of use in a repository, not a proficiency rating; boilerplate/transitive dependencies were not exhaustively added.
+- Make, Zapier, Claude Code, Codex, OpenCode, Hermes, Antigravity, and Cursor were added from the owner's explicit tool list. Verified named logos are used for Make, Zapier, Claude, OpenCode, and Cursor. Codex, Hermes, and Antigravity use text badges to avoid missing or unrelated brand logos.
 - [Personal portfolio](https://aam.excellentchimp.com/): professional email, LinkedIn, Malang location, remote/open-to-work status, work history, toolkit, and client outcomes. The 75% reduction, 2× processing volume, and up-to-15-hours saving are the owner's published case-study claims, not independently measured results. Their scope is retained in the README.
 - [Kanbaam README](https://github.com/aamsap/Kanbaam#readme) and package manifest: local-first behavior, keyboard controls, JSON validation, and Playwright checks.
 - [Chimp Chart README](https://github.com/aamsap/granite-chimp-charts#readme) and package manifest: dashboard concept, AI-assisted analysis, PDF reporting, and stack. Avoided repeating its unverified production-readiness and performance claims.
@@ -48,6 +49,7 @@ This workspace started empty. The publication target is the public `aamsap/aamsa
 - The initial live profile was checked after publishing. The animation workflow's first run completed successfully, and a repeat run correctly skipped a commit when its generated files were unchanged.
 - The final twelve-asset workflow passed. All 33 README images loaded in four desktop/mobile and light/dark previews without horizontal overflow. Pixel comparisons confirmed moving banner/snake frames and stable still variants; all four reduced-motion layouts selected the correct still sources.
 - The Kanbaam update's twenty-asset workflow passed. All 61 images loaded in four layouts without horizontal overflow; both disclosures worked. Kanbaam animation and still-frame pixel comparisons passed, and all three picture elements chose the right still variants at both viewport sizes in both themes. All 41 named badge logos were checked against Simple Icons.
+- The subsequent blueprint restyle and user-specified tool additions were checked in all four layouts: all 69 images loaded, both disclosures opened, and no horizontal overflow appeared. The background disclosure occurs once, above the featured project; the former outcome section is removed.
 
 ## Update
 

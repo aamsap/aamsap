@@ -19,11 +19,18 @@ I'm **Ilham Saputra**, usually called **Aam** — a data specialist and develope
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-182023?style=for-the-badge)](https://www.linkedin.com/in/ilham-saputra-aam)
 [![Email me](https://img.shields.io/badge/Email-Let%27s_Talk-182023?style=for-the-badge&logo=gmail&logoColor=FF8171)](mailto:ilhamsaputraferdinand@gmail.com)
 
-## Work with a measurable outcome
+<details>
+<summary><b>A little more background</b></summary>
 
-- **75% less manual work per loan file; 2× loans processed.** An AI workflow for email intake, document checks, Drive filing, and missing-document follow-ups. [Loan processing →](https://aam.excellentchimp.com/#part-02)
-- **Up to 15 hours saved per client, per week.** Reporting and automation work across HR, sales, health, operations, and property analysis. [Analytics & dashboards →](https://aam.excellentchimp.com/#part-08)
-- **A human handoff when the request needs one.** An n8n support agent using client history and pricing, with escalation routing; a companion pipeline schedules social posts and logs results. [Workflow walkthrough →](https://aam.excellentchimp.com/#part-01)
+- AI & **Data Specialist · Excellent Chimp · Jan 2025–present.** Client dashboards, AI workflow automation, and documentation.
+- **Web Developer · Titik Koma Bintang · Jan 2022–Jan 2025.** Responsive interfaces, API integrations, dashboards, payment features, and database query optimization.
+- **Digital Cadre · Ministry of Villages · Jan 2023–Dec 2024.** Helped communities use digital services and small businesses move online; delivered digital literacy training.
+
+Teaching people to use technology is part of why I care about making it understandable.
+
+[Full experience and education →](https://aam.excellentchimp.com/#sheet-05)
+
+</details>
 
 ## Featured project
 
@@ -57,6 +64,8 @@ Tools across my public and private projects, grouped by the work they do.
 
 ![Python](https://img.shields.io/badge/Python-182023?style=for-the-badge&logo=python&logoColor=FFD43B)
 ![n8n](https://img.shields.io/badge/n8n-182023?style=for-the-badge&logo=n8n&logoColor=FF8171)
+![Make](https://img.shields.io/badge/Make-182023?style=for-the-badge&logo=make&logoColor=C7A3FF)
+![Zapier](https://img.shields.io/badge/Zapier-182023?style=for-the-badge&logo=zapier&logoColor=FF8B4D)
 ![Google Apps Script](https://img.shields.io/badge/Apps_Script-182023?style=for-the-badge&logo=googleappsscript&logoColor=8AB4F8)
 ![LLM APIs](https://img.shields.io/badge/LLM_APIs-182023?style=for-the-badge)
 ![Excel and VBA](https://img.shields.io/badge/Excel_%2F_VBA-182023?style=for-the-badge)
@@ -128,22 +137,16 @@ Tools across my public and private projects, grouped by the work they do.
 
 </details>
 
-<details>
-<summary><b>A little more background</b></summary>
+## AI tools
 
-- AI & **Data Specialist · Excellent Chimp · Jan 2025–present.** Client dashboards, AI workflow automation, and documentation.
-- **Web Developer · Titik Koma Bintang · Jan 2022–Jan 2025.** Responsive interfaces, API integrations, dashboards, payment features, and database query optimization.
-- **Digital Cadre · Ministry of Villages · Jan 2023–Dec 2024.** Helped communities use digital services and small businesses move online; delivered digital literacy training.
+![Claude Code](https://img.shields.io/badge/Claude_Code-182023?style=for-the-badge&logo=claude&logoColor=D9A78D)
+![Codex](https://img.shields.io/badge/Codex-182023?style=for-the-badge)
+![OpenCode](https://img.shields.io/badge/OpenCode-182023?style=for-the-badge&logo=opencode&logoColor=white)
+![Hermes](https://img.shields.io/badge/Hermes-182023?style=for-the-badge)
+![Antigravity](https://img.shields.io/badge/Antigravity-182023?style=for-the-badge)
+![Cursor](https://img.shields.io/badge/Cursor-182023?style=for-the-badge&logo=cursor&logoColor=white)
 
-Teaching people to use technology is part of why I care about making it understandable.
-
-[Full experience and education →](https://aam.excellentchimp.com/#sheet-05)
-
-</details>
-
-## My contributions, on a snack break
-
-Even my contribution graph has a cleanup crew. 🐍
+## Even my contribution graph has a cleanup crew. 🐍
 
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-dark-static.svg">
@@ -152,7 +155,7 @@ Even my contribution graph has a cleanup crew. 🐍
   <img src="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-light.svg" width="100%" alt="A red snake eating cells from my GitHub calendar, including public and anonymized private contributions. Regenerated daily, with a still version for reduced motion.">
 </picture>
 
-<sub>Public + anonymized private contributions · Redrawn daily · Powered by <a href="https://github.com/Platane/snk">Platane/snk</a></sub>
+<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a></sub>
 
 ---
 
