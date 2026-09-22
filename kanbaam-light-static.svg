@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Kanbaam — a little more done</title>
+  <desc id="desc">Illustrated Kanbaam workflow: a task travels from To do through In progress to Done. A local-first kanban board with no account, server, or build step.</desc>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif}
+    .task{animation:move-task 10s cubic-bezier(.65,0,.35,1) infinite}
+    .tick{animation:complete 10s linear infinite}
+    @keyframes move-task{0%,12%{transform:translate(0,0);opacity:1}32%,45%{transform:translate(238px,0px);opacity:1}66%,86%{transform:translate(476px,0px);opacity:1}92%{transform:translate(476px,0px);opacity:0}93%,100%{transform:translate(0,0);opacity:0}}
+    @keyframes complete{0%,65%,92%,100%{opacity:0}68%,86%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.task,.tick{animation:none}.tick{opacity:0}}
+  </style>
+  <rect x="1" y="1" width="1198" height="428" rx="20" fill="#f8f2f5" stroke="#e4d4de"/>
+  <g fill="none" stroke="#ead5e1" stroke-width="1.5">
+    <path d="M0 370C280 170 480 540 1200 300"/>
+    <path d="M0 381C280 181 480 551 1200 311"/>
+    <path d="M0 392C280 192 480 562 1200 322"/>
+  </g>
+  <g fill="#ad304b"><rect x="42" y="50" width="8" height="24" rx="3"/><rect x="54" y="50" width="8" height="35" rx="3"/><rect x="66" y="50" width="8" height="17" rx="3"/></g>
+  <text x="90" y="74" font-size="19" fill="#715e6b" letter-spacing="2">FEATURED PROJECT</text>
+  <text x="39" y="153" font-size="62" font-weight="800" letter-spacing="-3" fill="#332731">kanbaam<tspan fill="#ad304b">.</tspan></text>
+  <text x="42" y="201" font-size="30" font-weight="600" fill="#332731">a little more done.</text>
+  <g fill="#715e6b" font-size="22">
+    <text x="42" y="245">Open index.html.</text>
+    <text x="42" y="276">Make room to focus.</text>
+  </g>
+  <g>
+      <rect x="430" y="74" width="220" height="246" rx="14" fill="#fffafc" stroke="#e4d4de"/>
+      <circle cx="450" cy="99" r="4" fill="#715e6b"/>
+      <text x="463" y="105" fill="#332731" font-size="18" font-weight="600">To do</text>
+      <rect x="446" y="220" width="188" height="73" rx="10" fill="#ffffff" stroke="#e4d4de"/><path d="M460 240h104m-104 15h145m-145 15h68" stroke="#e4d4de" stroke-width="5" stroke-linecap="round"/>
+    </g>
+<g>
+      <rect x="668" y="74" width="220" height="246" rx="14" fill="#fffafc" stroke="#e4d4de"/>
+      <circle cx="688" cy="99" r="4" fill="#715e6b"/>
+      <text x="701" y="105" fill="#332731" font-size="18" font-weight="600">In progress</text>
+      <rect x="684" y="220" width="188" height="73" rx="10" fill="#ffffff" stroke="#e4d4de"/><path d="M698 240h104m-104 15h145m-145 15h68" stroke="#e4d4de" stroke-width="5" stroke-linecap="round"/>
+    </g>
+<g>
+      <rect x="906" y="74" width="220" height="246" rx="14" fill="#fffafc" stroke="#e4d4de"/>
+      <circle cx="926" cy="99" r="4" fill="#ad304b"/>
+      <text x="939" y="105" fill="#332731" font-size="18" font-weight="600">Done</text>
+      <rect x="922" y="220" width="188" height="73" rx="10" fill="#ffffff" stroke="#e4d4de"/><path d="M936 240h104m-104 15h145m-145 15h68" stroke="#e4d4de" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  <g class="task">
+    <rect x="446" y="139" width="188" height="72" rx="10" fill="#ad304b" opacity=".12"/>
+    <rect x="446" y="134" width="188" height="72" rx="10" fill="#ad304b"/>
+    <text x="460" y="163" font-size="18" font-weight="600" fill="#ffffff">Ship something.</text>
+    <text x="460" y="187" font-size="14" fill="#ffffff">One small step.</text>
+    <path class="tick" d="M597 185l7 7 12-14" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M42 357H1158" stroke="#e4d4de"/>
+  <text x="42" y="387" font-size="18" fill="#332731" letter-spacing="1">LOCAL-FIRST / NO LOGIN / YOUR DATA</text>
+  <text x="920" y="387" font-size="13" fill="#715e6b" letter-spacing="1">ILLUSTRATED WORKFLOW</text>
+<style>.task{animation:none!important}.tick{animation:none!important;opacity:0}</style></svg>
