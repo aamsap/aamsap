@@ -7,6 +7,7 @@ const token = process.env.GITHUB_TOKEN;
 if (!token || !/^[\w.-]+\/[\w.-]+$/.test(repository ?? '')) throw new Error('GITHUB_TOKEN and GITHUB_REPOSITORY are required');
 const branch = 'output';
 const animatedFiles = ['header-light.svg', 'header-dark.svg', 'header-mobile-light.svg', 'header-mobile-dark.svg', 'contribution-snake-light.svg', 'contribution-snake-dark.svg'];
+animatedFiles.push('kanbaam-light.svg', 'kanbaam-dark.svg', 'kanbaam-mobile-light.svg', 'kanbaam-mobile-dark.svg');
 const files = animatedFiles.flatMap(name => [name, name.replace('.svg', '-static.svg')]);
 
 async function api(route, { method = 'GET', body, allowMissing = false } = {}) {

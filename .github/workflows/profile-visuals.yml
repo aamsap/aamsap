@@ -34,9 +34,17 @@ jobs:
           node-version: '24'
 
       - name: Draw animated banners
-        run: node scripts/build-assets.mjs
+        run: |
+          node scripts/build-assets.mjs
+          node scripts/build-kanbaam.mjs
         env:
           PROFILE_ASSET_DIR: dist
+
+      - name: Verify contribution visibility
+        run: node scripts/check-contributions.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_OWNER: ${{ github.repository_owner }}
 
       - name: Turn contributions into a snake
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
