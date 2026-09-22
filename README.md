@@ -32,6 +32,8 @@ Teaching people to use technology is part of why I care about making it understa
 
 </details>
 
+---
+
 ## Featured project
 
 <a href="https://github.com/aamsap/Kanbaam">
@@ -56,6 +58,8 @@ Teaching people to use technology is part of why I care about making it understa
 
 [Explore the code →](https://github.com/aamsap/Kanbaam) · [Download Kanbaam ↓](https://github.com/aamsap/Kanbaam/archive/refs/heads/main.zip)
 
+---
+
 ## My working toolkit
 
 Tools across my public and private projects, grouped by the work they do.
@@ -70,6 +74,15 @@ Tools across my public and private projects, grouped by the work they do.
 ![Excel and VBA](https://img.shields.io/badge/Excel_%2F_VBA-182023?style=for-the-badge)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-182023?style=for-the-badge)
 ![Gemini API](https://img.shields.io/badge/Gemini_API-182023?style=for-the-badge&logo=googlegemini&logoColor=8AB4F8)
+
+**AI tools & Assistants**
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-182023?style=for-the-badge&logo=claude&logoColor=D9A78D)
+![Codex](https://img.shields.io/badge/Codex-182023?style=for-the-badge)
+![OpenCode](https://img.shields.io/badge/OpenCode-182023?style=for-the-badge&logo=opencode&logoColor=white)
+![Hermes](https://img.shields.io/badge/Hermes-182023?style=for-the-badge)
+![Antigravity](https://img.shields.io/badge/Antigravity-182023?style=for-the-badge)
+![Cursor](https://img.shields.io/badge/Cursor-182023?style=for-the-badge&logo=cursor&logoColor=white)
 
 **Make the data readable**
 
@@ -95,6 +108,7 @@ Tools across my public and private projects, grouped by the work they do.
 ![Vue](https://img.shields.io/badge/Vue-182023?style=for-the-badge&logo=vuedotjs&logoColor=42B883)
 ![Three.js](https://img.shields.io/badge/Three.js-182023?style=for-the-badge&logo=threedotjs&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-182023?style=for-the-badge&logo=shadcnui&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-182023?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 **Connect the backend**
 
@@ -108,10 +122,6 @@ Tools across my public and private projects, grouped by the work they do.
 ![Redis](https://img.shields.io/badge/Redis-182023?style=for-the-badge&logo=redis&logoColor=FF6B6B)
 ![Prisma](https://img.shields.io/badge/Prisma-182023?style=for-the-badge&logo=prisma&logoColor=white)
 ![Drizzle](https://img.shields.io/badge/Drizzle-182023?style=for-the-badge&logo=drizzle&logoColor=C5F74F)
-
-**Take it mobile**
-
-![React Native](https://img.shields.io/badge/React_Native-182023?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-182023?style=for-the-badge&logo=expo&logoColor=white)
 
 **Build, test, repeat**
@@ -137,14 +147,7 @@ Tools across my public and private projects, grouped by the work they do.
 
 </details>
 
-## AI tools
-
-![Claude Code](https://img.shields.io/badge/Claude_Code-182023?style=for-the-badge&logo=claude&logoColor=D9A78D)
-![Codex](https://img.shields.io/badge/Codex-182023?style=for-the-badge)
-![OpenCode](https://img.shields.io/badge/OpenCode-182023?style=for-the-badge&logo=opencode&logoColor=white)
-![Hermes](https://img.shields.io/badge/Hermes-182023?style=for-the-badge)
-![Antigravity](https://img.shields.io/badge/Antigravity-182023?style=for-the-badge)
-![Cursor](https://img.shields.io/badge/Cursor-182023?style=for-the-badge&logo=cursor&logoColor=white)
+---
 
 ## Even my contribution graph has a cleanup crew. 🐍
 
