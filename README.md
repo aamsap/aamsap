@@ -62,7 +62,6 @@ Tools across my public and private projects, grouped by the work they do.
 
 **Automate the process**
 
-![Python](https://img.shields.io/badge/Python-182023?style=for-the-badge&logo=python&logoColor=FFD43B)
 ![n8n](https://img.shields.io/badge/n8n-182023?style=for-the-badge&logo=n8n&logoColor=FF8171)
 ![Make](https://img.shields.io/badge/Make-182023?style=for-the-badge&logo=make&logoColor=C7A3FF)
 ![Zapier](https://img.shields.io/badge/Zapier-182023?style=for-the-badge&logo=zapier&logoColor=FF8B4D)
@@ -74,6 +73,7 @@ Tools across my public and private projects, grouped by the work they do.
 
 **Make the data readable**
 
+![Python](https://img.shields.io/badge/Python-182023?style=for-the-badge&logo=python&logoColor=FFD43B)
 ![SQL](https://img.shields.io/badge/SQL-182023?style=for-the-badge)
 ![Power BI](https://img.shields.io/badge/Power_BI-182023?style=for-the-badge)
 ![Tableau](https://img.shields.io/badge/Tableau-182023?style=for-the-badge)
