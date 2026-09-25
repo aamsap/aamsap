@@ -60,6 +60,26 @@ Teaching people to use technology is part of why I care about making it understa
 
 ---
 
+## Even my contribution graph has a cleanup crew. 🐍
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-dark-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-light-static.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-light.svg" width="100%" alt="A red snake eating cells from my GitHub calendar, including public and anonymized private contributions. Regenerated daily, with a still version for reduced motion.">
+</picture>
+
+<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a></sub>
+
+---
+
+## Have a process that still runs by hand?
+
+I'd like to help build what comes next.
+[Let's talk about your team →](mailto:ilhamsaputraferdinand@gmail.com) · [Get to know my work →](https://aam.excellentchimp.com/)
+
+---
+
 ## My working toolkit
 
 Tools across my public and private projects, grouped by the work they do.
@@ -146,23 +166,3 @@ Tools across my public and private projects, grouped by the work they do.
 ![Sentry](https://img.shields.io/badge/Sentry-182023?style=flat-square&logo=sentry&logoColor=E3BCD5)
 
 </details>
-
----
-
-## Even my contribution graph has a cleanup crew. 🐍
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-dark-static.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-light-static.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/aamsap/aamsap/output/contribution-snake-light.svg" width="100%" alt="A red snake eating cells from my GitHub calendar, including public and anonymized private contributions. Regenerated daily, with a still version for reduced motion.">
-</picture>
-
-<sub>Powered by <a href="https://github.com/Platane/snk">Platane/snk</a></sub>
-
----
-
-## Have a process that still runs by hand?
-
-I'd like to help build what comes next.
-[Let's talk about your team →](mailto:ilhamsaputraferdinand@gmail.com) · [Get to know my work →](https://aam.excellentchimp.com/)
